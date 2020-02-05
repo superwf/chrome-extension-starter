@@ -1,14 +1,18 @@
 # Chrome Extension Starter
 
-This is a template for create chrome extension
+This is a template for creating chrome extension app.
 
 ## Target
 
 - [] typescript support.
 
-- [] eslint check.
+- [] babel support, use babel to parse typescript.
 
 - [] prettier auto format.
+
+- [] eslint with typescript parser check.
+
+- [] eslint rules airbnb.
 
 - [] git commit check.
 
@@ -18,4 +22,10 @@ This is a template for create chrome extension
 
 - [] hot reload when develop, with [crx-hotreload](https://github.com/xpl/crx-hotreload).
 
-- [] lazy load vendor script.
+- [] generate sourceMap.
+
+- [] generate typescript declaration.
+
+- [] webpack support, to combine any types assets, webpack is the only choice.
+
+- [] jest test.
