@@ -54,7 +54,16 @@ module.exports = {
       json: 'always',
     }],
     'import/order': ['error', { 'newlines-between': 'always' }],
-
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: [
+          'webpack.config.*',
+          '**/__tests__/**',
+        ],
+        optionalDependencies: false,
+      },
+    ],
     'import/prefer-default-export': 0,
     'linebreak-style': 0,
   },

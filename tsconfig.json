@@ -12,11 +12,11 @@
     "pretty": true,
     "resolveJsonModule": true,
     "sourceMap": true,
-    "incremental": true,
     "declaration": true,
     "jsx": "react",
     "baseUrl": ".",
     "strictPropertyInitialization": false,
     "newLine": "lf"
-  }
+  },
+  "files": ["src/background.ts"]
 }

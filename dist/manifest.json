@@ -1,0 +1,24 @@
+{
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "name": "testExtension",
+  "permissions": ["tabs"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup/index.html",
+    "default_title": "React Chrome Extension Starter"
+  },
+  "icons": {
+    "128": "./assets/icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["contentscript.js"],
+      "css": ["contentscript.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

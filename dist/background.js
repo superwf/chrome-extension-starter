@@ -1,0 +1,2 @@
+var r={10:(r,e,o)=>{o.d(e,{u:()=>t,Z:()=>n});const t=!0,n=()=>!0;console.log("is in background",t)}},e={};function o(t){if(e[t])return e[t].exports;var n=e[t]={exports:{}};return r[t](n,n.exports,o),n.exports}o.d=(r,e)=>{for(var t in e)o.o(e,t)&&!o.o(r,t)&&Object.defineProperty(r,t,{enumerable:!0,get:e[t]})},o.o=(r,e)=>Object.prototype.hasOwnProperty.call(r,e),o(10);
+//# sourceMappingURL=background.js.map
