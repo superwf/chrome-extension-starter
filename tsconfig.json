@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "target": "ES6",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "experimentalDecorators": true,
@@ -18,5 +18,10 @@
     "strictPropertyInitialization": false,
     "newLine": "lf"
   },
-  "files": ["src/background.ts"]
+  "files": [
+    "src/background.ts",
+    "src/content.ts",
+    "src/injected.ts",
+    "src/hotReload.ts"
+  ]
 }

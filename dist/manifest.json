@@ -4,7 +4,7 @@
   "name": "testExtension",
   "permissions": ["tabs"],
   "background": {
-    "scripts": ["background.js"],
+    "scripts": ["background.js", "hotReload.js"],
     "persistent": false
   },
   "browser_action": {
@@ -16,9 +16,9 @@
   },
   "content_scripts": [
     {
-      "js": ["contentscript.js"],
-      "css": ["contentscript.css"],
+      "js": ["content.js"],
       "matches": ["<all_urls>"]
     }
-  ]
+  ],
+  "web_accessible_resources": ["injected.js"]
 }

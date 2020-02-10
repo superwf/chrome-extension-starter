@@ -4,28 +4,26 @@ This is a template for creating chrome extension app.
 
 ## Target
 
-- [] typescript support.
+- [x] typescript support.
 
-- [] babel support, use babel to parse typescript.
+- [x] prettier auto format.
 
-- [] prettier auto format.
+- [x] eslint with typescript parser check, and webextensions env.
 
-- [] eslint with typescript parser check.
+- [x] eslint rules airbnb.
 
-- [] eslint rules airbnb.
-
-- [] git commit check.
+- [x] git commit check.
 
 - [] auto generate changelog.
 
 - [] auto manage version bump.
 
-- [] hot reload when develop, with [crx-hotreload](https://github.com/xpl/crx-hotreload).
+- [x] hot reload when develop, with [crx-hotreload](https://github.com/xpl/crx-hotreload).
 
-- [] generate sourceMap.
+- [x] generate sourceMap.
 
-- [] generate typescript declaration.
+- [x] generate typescript declaration.
 
-- [] webpack support, to combine any types assets, webpack is the only choice.
+- [x] webpack support, to combine any types assets, webpack is the only choice.
 
 - [] jest test.

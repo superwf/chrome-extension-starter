@@ -29,6 +29,7 @@ module.exports = {
     node: true,
     jest: true,
     es6: true,
+    webextensions: true,
   },
   rules: {
     'prettier/prettier': [

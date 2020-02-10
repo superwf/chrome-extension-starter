@@ -11,7 +11,8 @@
     "email": "superwf@gmail.com"
   },
   "scripts": {
-    "start": "npx tsx --watch",
+    "start": "tsx --watch",
+    "start:webpack": "webpack --mode=development --watch ",
     "prepublishOnly": "npx finepack"
   },
   "license": "MIT",

@@ -1,6 +1,8 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const { resolve } = require('path')
 
 const { CheckerPlugin } = require('awesome-typescript-loader')
+/* eslint-enable @typescript-eslint/no-var-requires */
 
 const resolveRoot = relativePath => resolve(__dirname, relativePath)
 
@@ -8,6 +10,9 @@ const config = {
   experiments: { outputModule: true, mjs: true },
   entry: {
     background: [resolveRoot('src/background.ts')],
+    content: [resolveRoot('src/content.ts')],
+    injected: [resolveRoot('src/injected.ts')],
+    hotReload: [resolveRoot('src/hotReload.ts')],
   },
   output: {
     publicPath: '/',
@@ -15,7 +20,7 @@ const config = {
     chunkFilename: `[name]-chunk-[chunkhash:5].js`,
     module: true,
     libraryTarget: 'module',
-    ecmaVersion: 11,
+    ecmaVersion: 10,
   },
   module: {
     rules: [

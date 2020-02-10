@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/injected.ts"],"names":[],"mappings":";;;;;;;;AAAA,OAAO,CAAC,GAAG,CAAC,kBAAkB,CAAC","file":"injected.js","sourcesContent":["console.log('in injected.js 1')\n"],"sourceRoot":""}
