@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const { resolve } = require('path')
 
-const { CheckerPlugin } = require('awesome-typescript-loader')
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
+
 /* eslint-enable @typescript-eslint/no-var-requires */
 
 const resolveRoot = relativePath => resolve(__dirname, relativePath)
@@ -28,7 +29,10 @@ const config = {
         test: /\.tsx?$/,
         use: [
           {
-            loader: 'awesome-typescript-loader?{configFileName: "tsconfig.json"}',
+            loader: 'ts-loader',
+            options: {
+              transpileOnly: true,
+            },
           },
         ],
         include: [resolveRoot('src')],
@@ -38,7 +42,11 @@ const config = {
     ],
   },
   devtool: 'source-map',
-  plugins: [new CheckerPlugin()],
+  plugins: [
+    new ForkTsCheckerWebpackPlugin({
+      reportFiles: ['src/**/*.{ts,tsx}'],
+    }),
+  ],
 }
 
 module.exports = config
