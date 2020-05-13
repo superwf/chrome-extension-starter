@@ -95,7 +95,7 @@
 
 "use strict";
 
-console.log('in injected.js 1');
+console.log('in injected.js 7');
 
 
 /***/ }),
