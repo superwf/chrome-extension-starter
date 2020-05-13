@@ -1,14 +1,12 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-const { resolve } = require('path')
+import { resolve } from 'path'
 
-const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
+import { Configuration } from 'webpack'
+import * as ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin'
 
-/* eslint-enable @typescript-eslint/no-var-requires */
+const resolveRoot = (relativePath: string): string => resolve(__dirname, relativePath)
 
-const resolveRoot = relativePath => resolve(__dirname, relativePath)
-
-const config = {
-  experiments: { outputModule: true, mjs: true },
+const config: Configuration = {
+  // experiments: { outputModule: true, mjs: true },
   entry: {
     background: [resolveRoot('src/background.ts')],
     content: [resolveRoot('src/content.ts')],
@@ -19,9 +17,6 @@ const config = {
     publicPath: '/',
     filename: `[name].js`,
     chunkFilename: `[name]-chunk-[chunkhash:5].js`,
-    module: true,
-    libraryTarget: 'module',
-    ecmaVersion: 10,
   },
   module: {
     rules: [
@@ -49,4 +44,4 @@ const config = {
   ],
 }
 
-module.exports = config
+export default config

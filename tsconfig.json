@@ -7,7 +7,7 @@
     "outDir": "dist",
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
+    "module": "commonjs",
     "moduleResolution": "node",
     "pretty": true,
     "resolveJsonModule": true,
